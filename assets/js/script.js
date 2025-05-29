@@ -213,44 +213,6 @@
     }
     // Progressbar End
 
-    /* ============================================================ */
-    /* Custom Cursor start
-    /* ============================================================ */
-    if ($('.custom_cursor').length) {
-        var cursor = document.querySelector('.custom_cursor_one');
-        var cursorInner = document.querySelector('.custom_cursor_two');
-        var anchors = document.querySelectorAll('a');
-
-        document.addEventListener('mousemove', function(e) {
-            var x = e.clientX;
-            var y = e.clientY;
-            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
-        });
-        document.addEventListener('mousemove', function(e) {
-            var x = e.clientX;
-            var y = e.clientY;
-            cursorInner.style.left = x + 'px';
-            cursorInner.style.top = y + 'px';
-        });
-        document.addEventListener('mousedown', function() {
-            cursor.classList.add('click');
-            cursorInner.classList.add('custom_cursor_hover');
-        });
-        document.addEventListener('mouseup', function() {
-            cursor.classList.remove('click');
-            cursorInner.classList.remove('custom_cursor_hover');
-        });
-        anchors.forEach((item) => {
-            item.addEventListener('mouseover', () => {
-                cursor.classList.add('custom_cursor_hover');
-            });
-            item.addEventListener('mouseleave', () => {
-                cursor.classList.remove('custom_cursor_hover');
-            });
-        });
-    }
-    // Custom Cursor End
-
 
     /* ============================================================ */
     /* Animated Circle Progress start
