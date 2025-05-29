@@ -5,39 +5,6 @@
 
 (function($) { 
     
-    let mobilemenusidebar = document.getElementById('mobilemenusidebar');
-    var mobilemenusidebar_xhttp = new XMLHttpRequest();
-    mobilemenusidebar_xhttp.onreadystatechange = function () {
-        mobilemenusidebar.innerHTML = this.responseText;
-    }
-    mobilemenusidebar_xhttp.open('GET', 'http://127.0.0.1:5500/models/mobilemenusidebar.html', true);
-    mobilemenusidebar_xhttp.send()
-
-    let sidebarprofile = document.getElementById('sidebarprofile');
-    var sidebarprofile_xhttp = new XMLHttpRequest();
-    sidebarprofile_xhttp.onreadystatechange = function () {
-        sidebarprofile.innerHTML = this.responseText;
-    }
-    sidebarprofile_xhttp.open('GET', 'http://127.0.0.1:5500/models/sidebarprofile.html', true);
-    sidebarprofile_xhttp.send()
-
-    let navigation = document.getElementById('navigation');
-    var navigation_xhttp = new XMLHttpRequest();
-    navigation_xhttp.onreadystatechange = function () {
-        navigation.innerHTML = this.responseText;
-    }
-    navigation_xhttp.open('GET', 'http://127.0.0.1:5500/models/navigation.html', true);
-    navigation_xhttp.send()
-
-    let footer = document.getElementById('footer');
-    var footer_xhttp = new XMLHttpRequest();
-    footer_xhttp.onreadystatechange = function () {
-        footer.innerHTML = this.responseText;
-    }
-    footer_xhttp.open('GET', 'http://127.0.0.1:5500/models/footer.html', true);
-    footer_xhttp.send()
-
-
 'use strict';
 
     /* ============================================================ */
