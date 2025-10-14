@@ -3821,7 +3821,7 @@ html.dark .portfolio_wrapper .info span {
   }
 
   .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:px-6 {
