@@ -2952,6 +2952,10 @@ html.dark .portfolio_wrapper .info span {
   padding: 1.25rem;
 }
 
+.\*\:p-8 > * {
+  padding: 2rem;
+}
+
 .\*\:px-2 > * {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
