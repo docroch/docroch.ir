@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Peyda";
+    src: url("../fonts/PeydaWebFaNum-Regular.woff") format('woff');
+    src: url("../fonts/PeydaWebFaNum-Regular.woff2") format('woff2');
+}
+
+[dir="rtl"] body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div {
+    font-family: 'Peyda', sans-serif !important;
+}
+
+
+/* cd-headline for RTL */
+
+.typing-container {
+    display: inline-block;
+    min-height: 1.2em;
+    /* Prevents layout jump */
+}
+
+#typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* social media icons */
+
+.space-x-3> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-right: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+
+/* tick in introduce */
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+
+/* svg in services */
+
+.left-6 {
+    left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .md\:left-8 {
+        left: 2rem;
+    }
+}
