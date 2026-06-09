@@ -24,7 +24,6 @@ div {
 .typing-container {
     display: inline-block;
     min-height: 1.2em;
-    /* Prevents layout jump */
 }
 
 #typing-text::after {
@@ -47,7 +46,7 @@ div {
 }
 
 
-/* social media icons */
+/* social media icons desktop */
 
 .space-x-3> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
@@ -55,6 +54,21 @@ div {
     margin-right: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+/* social media icons mobile */
+
+.space-x-4> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(1rem * var(--tw-space-x-reverse));
+    margin-right: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/* mobile menu */
+
+.space-x-2> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-right: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 
 /* tick in introduce */
 
@@ -72,5 +86,30 @@ div {
 @media (min-width: 768px) {
     .md\:left-8 {
         left: 2rem;
+    }
+}
+
+
+/* experience */
+
+@media (min-width: 768px) {
+
+    .md\:pr-16 {
+        padding-right: 4rem;
+    }
+
+    .md\:after\:content-\[\'\'\]::after {
+        --tw-content: '';
+        content: var(--tw-content);
+    }
+
+    .md\:before\:-right-1::before {
+        content: var(--tw-content);
+        right: -0.25rem;
+    }
+
+    .md\:before\:right-64::before {
+        content: var(--tw-content);
+        right: 16rem;
     }
 }
